@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import NavigationBar from './components/NavigationBar/NavigationBar'
-import Home from './components/Home'
+import Landing from './components/Landing/Landing'
 import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
 
@@ -27,7 +27,7 @@ const App = () => {
           <SignIn />
         </Route>
         <Route path="/">
-          <Home />
+          <Landing />
         </Route>
       </Switch>
     </div>

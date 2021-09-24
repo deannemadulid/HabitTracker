@@ -1,13 +1,13 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
-import SignUp from '../components/SignUp/SignUp'
+import SignUp from '../SignUp/SignUp'
 import { Switch, Route, Link } from "react-router-dom"
 
-const Home = () => {
+const Landing = () => {
   return (
     <div>
-      HabitTracker Home Page
+      HabitTracker Landing Page
       <div>
         <Link to="/signup"><Button>Sign Up</Button></Link>
       </div>
@@ -15,4 +15,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Landing
