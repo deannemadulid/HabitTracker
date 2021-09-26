@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import {useHistory, Link} from 'react-router-dom'
+import './SignIn.css'
 
 
 const SignIn = () => {
@@ -18,12 +19,12 @@ const SignIn = () => {
   }
 
   return (
-    <div>
-      <h1>Sign In Page</h1>
+    <div id="signin-form">
+      <h1>Sign In to HabitTracker</h1>
       <Form onSubmit={logIn}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control type="email" placeholder="Email" />
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -39,8 +40,18 @@ const SignIn = () => {
         </Button>
       </Form>
       
-      <Link to="/">
-        <Button>Cancel</Button>
+      {/* need to change this link later and create the proper page
+      <div>
+        <Link to="/">
+          {/* need to change this link later and create the proper page
+          Forgot password?
+        </Link>
+      </div>
+    */}
+
+      Don't have an account? 
+      <Link to="/signup" id="signup-link">
+        Create an account
       </Link>
     </div>
   )
