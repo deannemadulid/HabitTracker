@@ -8,7 +8,7 @@ import './SignIn.css'
 const SignIn = () => {
   const history = useHistory()
   
-  const logIn = (event) => {
+  const handleSignIn = (event) => {
     event.preventDefault()
     console.log("form submitted")
     // add code to verify login
@@ -21,7 +21,7 @@ const SignIn = () => {
   return (
     <div id="signin-form">
       <h1>Sign In to HabitTracker</h1>
-      <Form onSubmit={logIn}>
+      <Form onSubmit={handleSignIn}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Email" />
