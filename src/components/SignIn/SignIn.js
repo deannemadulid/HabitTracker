@@ -15,7 +15,10 @@ const SignIn = () => {
     // if invalid login
     // display error message
     // else
-    history.push("/")
+    const form = event.currentTarget
+
+    // will change this after testing
+    history.push("/dashboard")
   }
 
   return (

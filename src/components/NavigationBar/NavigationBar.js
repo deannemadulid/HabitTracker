@@ -9,7 +9,7 @@ const NavigationBar = () => {
   return (
     <Navbar bg="dark" variant="dark">
         <Navbar.Brand>
-          <Link to="/"><div className="Home">HabitTracker</div></Link>
+          <Link to="/"><div className="home">HabitTracker</div></Link>
         </Navbar.Brand>
         <Container>
         <Nav className="justify-content-end">
