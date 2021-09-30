@@ -1,14 +1,3 @@
-import React from 'react'
-import Table from 'react-bootstrap/Table'
-
-const today = new Date()
-const yesterday = today.setDate(today.getDate() - 1)
-
-const habits= [
-  ["habit1", [today]],
-  ["habit2", [yesterday, today]]
-]
-
 const past7Days = () => {
   let daysArray = []
 
