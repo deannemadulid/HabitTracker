@@ -7,3 +7,15 @@ Table {
 .dates {
   width: 10%;
 }
+
+.habit-achieved {
+  color: green;
+  text-align: center;
+  font-weight: bold;
+  font-size: 200%;
+  size: 100%;
+}
+
+.date-cell:hover {
+  background-color: cornsilk;
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
 import dashboard from './DashboardFunctions'
+import { useSelector, useDispatch } from 'react-redux'
 
-const Body = ({dates, habits}) => {
+import './Dashboard.css'
 
-  console.log(dates)
+const Body = ({dates}) => {
+  const dispatch = useDispatch()
+  const habits = useSelector(state => state.habits)
 
   return (
     <tbody>
@@ -13,11 +16,11 @@ const Body = ({dates, habits}) => {
           <td>{habit.name}</td>
           { 
             dates.map(date => 
-            <td>
+            <td className="date-cell">
               {
                 dashboard.checkDateInDateArray(date, habit.dates)
-                ? <span>yes</span> 
-                : <span>no</span>
+                ? <div class="habit-achieved">&#10003;</div>
+                : <div class="habit-not-achieved"/>
               }
             </td>)}
         </tr>) }

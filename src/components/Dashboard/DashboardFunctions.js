@@ -12,7 +12,6 @@ const past7Days = () => {
 }
 
  const convertDateToString = (date) => {
-   console.log(date)
    const month = date.toLocaleString('default', { month: 'short' })
    const day = date.getDate()
    return month + " " + day
@@ -20,7 +19,6 @@ const past7Days = () => {
 
 const checkDateInDateArray = (date, dateArray) => {
   const dateStringArray = dateArray.map(date => convertDateToString(date))
-  console.log(date, dateStringArray)
   return dateStringArray.includes(date)
 }
 
