@@ -19,7 +19,6 @@ const AddHabit = () => {
   const addHabit = (event) => {
     event.preventDefault()
 
-    // habitsStore.dispatch(addNewHabit(newHabit))
     dispatch(addNewHabit(newHabit))
     console.log(habits)
     // add to db

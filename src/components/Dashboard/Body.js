@@ -2,6 +2,7 @@ import React from 'react'
 import Table from 'react-bootstrap/Table'
 import dashboard from './DashboardFunctions'
 import { useSelector, useDispatch } from 'react-redux'
+import HabitOptions from './HabitOptions'
 
 import './Dashboard.css'
 
@@ -13,7 +14,7 @@ const Body = ({dates}) => {
     <tbody>
       { habits.map(habit => 
         <tr>
-          <td>{habit.name}</td>
+          <td><HabitOptions name={habit.name} /></td>
           { 
             dates.map(date => 
             <td className="date-cell">
